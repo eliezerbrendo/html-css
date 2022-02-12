@@ -14,6 +14,7 @@
         {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th
         {
@@ -32,6 +33,16 @@
             background-color: gray;
             color: white;
         }
+        thead > tr > th 
+        {
+            position: sticky;
+            top: -1;
+            background-color: #383838;
+        }
+        tbody > tr:nth-child(2n)
+        {
+            background-color: lightgray;
+        }
 
 
     </style>
@@ -44,7 +55,7 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col">População</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
 
